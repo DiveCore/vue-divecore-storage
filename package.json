@@ -1,6 +1,6 @@
 {
   "name": "vue-divecore-storage",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Vue本地存储插件",
   "main": "dist/vue-divecore-storage.js",
   "browser": "dist/vue-divecore-storage.min.js",
