@@ -1,11 +1,19 @@
 {
-  "name": "vue-storage",
-  "version": "1.0.0",
+  "name": "vue-divecore-storage",
+  "version": "1.0.1",
   "description": "Vue本地存储插件",
+  "main": "dist/vue-divecore-storage.js",
+  "browser": "dist/vue-divecore-storage.min.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack"
   },
+  "keywords": [
+    "vue",
+    "storage",
+    "localStorage",
+    "sessionStorage"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/DiveCore/vue-storage.git"

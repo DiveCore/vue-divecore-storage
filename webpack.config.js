@@ -12,7 +12,7 @@ module.exports = {
   entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'vue-storage.min.js',
+    filename: 'vue-divecore-storage.min.js',
     library: 'VueStorage',
     libraryTarget: 'umd',
     umdNamedDefine: true,

@@ -1,1 +1,94 @@
-# vue-storage
+# vue-divecore-storage
+
+## 描述 && 特性
+
+-
+
+## 安装
+
+```
+> 安装 npm install vue-divecore-storage --save
+```
+
+## 使用
+
+```
+import Vue from 'vue'
+import Storage from 'vue-divecore-storage'
+
+Vue.use(Storage, {
+  prefix: 'your_app_scope_',  // default 'app_'
+  storageTypes: ['session','local'] // default 'local'
+})
+```
+
+## 方法
+
+> set(key, value, delay = null)
+
+- 将指定键下的值存储在存储器中，delay 设置存储时长，超过该时长，将删除指定键下的值。
+
+```
+Vue.$localStorage.set('userInfo', { name: 'zhangsan', age: 21 })
+Vue.$localStorage.set('token', 'JWT', 8 * 60 * 60 * 1000)
+```
+
+> get(key, defalutValue = {})
+
+- 获取指定键下存储的值，defalutValue 设置默认值，当值不存在时返回默认值
+
+```
+Vue.$localStorage.get('userInfo')
+Vue.$localStorage.get('userInfo', {})
+```
+
+> remove(key)
+
+- 删除指定键在本地存储中
+
+```
+Vue.$localStorage.remove('userInfo')
+Vue.$localStorage.remove('userInfo')
+```
+
+> clear()
+
+- 清空存储
+
+```
+Vue.$localStorage.clear()
+Vue.$localStorage.clear()
+```
+
+## 监听者
+
+> addListener(key, fn)
+
+- 给指定键添加观察者
+
+```
+
+const _onChange = (newV, oldV, url) => {
+   // newV: 更新后的值
+   // oldV: 更新前的值
+   // url: 修改页面的地址
+ }
+
+Vue.$localStorage.addListener('userInfo', _onChange)
+```
+
+> removeListener(key, fn)
+
+- 删除指定键的指定观察者
+
+```
+Vue.$localStorage.removeListener('userInfo', _onChange)
+```
+
+> clearListener(key)
+
+- 清除指定键的所有观察者
+
+```
+Vue.$localStorage.clearListener('userInfo')
+```
