@@ -78,8 +78,16 @@ class Storage {
    * 清空
    * @param force             是否强制清除所有缓存
    */
-  clear() {
-    this.storage.clear()
+  clear(force = false) {
+    if (force) {
+      this.storage.clear()
+    } else {
+      const keys = Object.keys(this.storage)
+      for (const key in keys) {
+        if (key.substr(0, this.prefix.length) === this.prefix)
+          this.storage.removeItem(key)
+      }
+    }
   }
 }
 

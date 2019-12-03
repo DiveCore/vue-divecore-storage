@@ -2,7 +2,13 @@
 
 ## 描述 && 特性
 
--
+- 对存储的值进行自动序列化
+
+- 可跨页面进行监听，通信
+
+- 配置 prefix，设置项目的 scope
+
+- 可设置对应存储内容的时长
 
 ## 安装
 
@@ -51,9 +57,9 @@ Vue.$localStorage.remove('userInfo')
 Vue.$localStorage.remove('userInfo')
 ```
 
-> clear()
+> clear(force = false)
 
-- 清空存储
+- 清空存储，如果 force = true，则强制清除所有缓存。force = false，则清除对应 scope 下的缓存
 
 ```
 Vue.$localStorage.clear()
