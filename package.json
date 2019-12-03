@@ -1,0 +1,30 @@
+{
+  "name": "vue-storage",
+  "version": "1.0.0",
+  "description": "Vue本地存储插件",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DiveCore/vue-storage.git"
+  },
+  "author": "xu.zhang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DiveCore/vue-storage/issues"
+  },
+  "homepage": "https://github.com/DiveCore/vue-storage#readme",
+  "devDependencies": {
+    "@babel/core": "^7.7.4",
+    "@babel/plugin-transform-runtime": "^7.7.4",
+    "@babel/polyfill": "^7.7.0",
+    "@babel/preset-env": "^7.7.4",
+    "babel-loader": "^8.0.6",
+    "clean-webpack-plugin": "^3.0.0",
+    "unminified-webpack-plugin": "^2.0.0",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
+  }
+}
