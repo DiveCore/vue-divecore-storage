@@ -63,7 +63,7 @@ Vue.$localStorage.remove('userInfo')
 
 ```
 Vue.$localStorage.clear()
-Vue.$localStorage.clear()
+Vue.$localStorage.clear(true)
 ```
 
 ## 监听者
